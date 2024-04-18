@@ -1,0 +1,27 @@
+@use 'layout';
+
+.site-header {
+    @include layout.default(full);
+    
+    &__inner {
+        display: flex;
+        height: 96px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 32px;
+        background-color: var(--color-light-500);
+    }
+
+    &__logo {
+        svg {
+            height: 48px;
+            width: auto;
+
+        }    
+
+    }
+
+
+}
+

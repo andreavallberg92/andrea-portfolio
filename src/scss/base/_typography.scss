@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-sans);
+    font-family: var(--font-serif);
 
 }
 
@@ -34,7 +34,9 @@ h6 {
 }
 
 a {
+    font-family: var(--font-sans);
     line-height: var(--line-height);
+    text-decoration: none;
     
 }
 
@@ -51,4 +53,10 @@ blockquote {
 li {
     line-height: var(--line-height);
 
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

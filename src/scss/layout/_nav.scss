@@ -1,0 +1,16 @@
+.menu {
+    &__list {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__link {
+        color: var(--color-dark-400);
+        font-size: 1.25rem;
+        
+
+        &:hover {
+            color: var(--color-accent-500);
+        }
+    }
+}
