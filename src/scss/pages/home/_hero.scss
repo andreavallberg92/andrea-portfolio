@@ -1,0 +1,43 @@
+@use '../../layout/layout';
+@use '../../components/buttons' as button;
+
+.hero {
+    @include layout.default();
+    background-color: var(--color-light-500);
+    padding: var(--section-gap-inner);
+
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 670px;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+
+    &__button {
+        @include button.default();
+    }
+
+    &__image {
+        
+        img {
+            height: 540px;
+            width: 438px;
+        }
+    }
+
+}
