@@ -4,7 +4,9 @@
     @include layout.default(full);
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 998;
+    background: var(--color-light-500);
+    background: linear-gradient(180deg, var(--color-light-500) 50%, rgba(0,0,0,0) 100%);
     
     &__inner {
         display: flex;
@@ -27,4 +29,3 @@
 
 
 }
-

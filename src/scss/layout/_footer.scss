@@ -56,3 +56,13 @@
 .copyright {
     opacity: 0.7;
 }
+
+@media screen and (max-width: 640px) {
+    .site-footer {
+
+        &__info {
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
+}

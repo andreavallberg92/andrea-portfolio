@@ -7,6 +7,8 @@
     <title>Andréa Vallberg</title>
     <!-- Portfolio -->
     <link rel="stylesheet" href="style.css">
+    <script src="/src/js/slider.js" defer></script>
+    <script src="/src/js/menu.js" defer></script>
 
     <!-- Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,8 +50,53 @@
                         <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
                     </ul>
                 </nav>
+
+                <button class="hamburger-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#170E08" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                      
+                </button>
             </div>
         </header>
+
+        <div class="responsive-menu">
+
+            <button class="close-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                  </svg>                  
+            </button>
+
+            <nav class="menu">
+                <a href="/" class="site-header__logo">  
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg id="Lager_2" data-name="Lager 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 169.63 89.19">
+                    <defs>
+                        <style>
+                        .cls-1 {
+                            fill: #1d1d1b;
+                            stroke-width: 0px;
+                        }
+                        </style>
+                    </defs>
+                    <g id="Lager_1-2" data-name="Lager 1">
+                        <g>
+                        <polygon class="cls-1" points="100.09 89.19 69.56 89.19 39.03 28.14 53.48 0 100.09 89.19"/>
+                        <path class="cls-1" d="M39.07,89.19H0c7.98-6.44,14.64-14.43,19.55-23.53,4.89,9.1,11.55,17.09,19.53,23.53Z"/>
+                        <polygon class="cls-1" points="69.54 0 100.07 0 130.6 61.05 116.16 89.19 69.54 0"/>
+                        <path class="cls-1" d="M130.56,0h39.07c-7.98,6.44-14.64,14.43-19.55,23.53C145.2,14.43,138.54,6.44,130.56,0Z"/>
+                        </g>
+                    </g>
+                    </svg>
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                    <li class="menu__item"><a href="#services" class="menu__link">Services</a></li>
+                    <li class="menu__item"><a href="#work" class="menu__link">Work</a></li>
+                    <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <!-- Hero -->
         <section class="hero">
@@ -147,7 +194,6 @@
                     <div class="my-work">
                         <figure class="my-work__image">
                             <img src="/src/assets/images/image-slide-1.png" alt="">
-                            <button class="my-work__button">Next</button>
                         </figure>
                         <div class="my-work__content">
                             <h3 class="my-work__title">The Everbloom Conservatory Website</h3>
@@ -157,7 +203,6 @@
                     <div class="my-work">
                         <figure class="my-work__image">
                             <img src="/src/assets/images/image-slide-2.png" alt="">
-                            <button class="my-work__button">Next</button>
                         </figure>
                         <div class="my-work__content">
                             <h3 class="my-work__title">Crafting Websites That Convert: Grow Your Business Online</h3>
@@ -167,7 +212,6 @@
                     <div class="my-work">
                         <figure class="my-work__image">
                             <img src="/src/assets/images/image-slide-3.png" alt="">
-                            <button class="my-work__button">Next</button>
                         </figure>
                         <div class="my-work__content">
                             <h3 class="my-work__title">Your Vision, My Expertise: Web Design & Development Made Easy</h3>
@@ -177,7 +221,6 @@
                     <div class="my-work">
                         <figure class="my-work__image">
                             <img src="/src/assets/images/image-slide-4.png" alt="">
-                            <button class="my-work__button">Next</button>
                         </figure>
                         <div class="my-work__content">
                             <h3 class="my-work__title">Beyond Pixels: Creating User-Centric Websites People Love</h3>
@@ -187,7 +230,6 @@
                     <div class="my-work">
                         <figure class="my-work__image">
                             <img src="/src/assets/images/image-slide-5.png" alt="">
-                            <button class="my-work__button">Next</button>
                         </figure>
                         <div class="my-work__content">
                             <h3 class="my-work__title">From Concept to Launch: Your One-Stop Shop for Web Solutions</h3>
@@ -197,7 +239,6 @@
                     <div class="my-work">
                         <figure class="my-work__image">
                             <img src="/src/assets/images/image-slide-6.png" alt="">
-                            <button class="my-work__button">Next</button>
                         </figure>
                         <div class="my-work__content">
                             <h3 class="my-work__title">Let's Talk Web Design: Schedule Your Free Consultation Today!</h3>

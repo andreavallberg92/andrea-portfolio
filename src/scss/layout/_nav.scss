@@ -1,4 +1,6 @@
 .menu {
+    display: flex;
+
     &__list {
         display: flex;
         gap: 2rem;
@@ -13,4 +15,68 @@
             color: var(--color-accent-500);
         }
     }
+}
+
+.hamburger-menu {
+    display: none;
+    border: 0;
+    background-color: transparent;
+
+    svg {
+        width: 2rem;
+        fill: var(--color-dark-400);
+    }
+}
+
+.responsive-menu {
+    display: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0 0 0 0;
+    z-index: 999;
+    background-color: var(--color-light-500);
+
+    .close-menu {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        border: 0;
+        background-color: transparent;
+
+        svg {
+            width: 2rem;
+            fill: var(--color-dark-400);
+        }
+    }
+
+    &--open {
+        display: flex;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        z-index: 1000;
+        color: var(--color-dark-400);
+        
+        &__list {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    
+    .menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
 }

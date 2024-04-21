@@ -13,7 +13,7 @@
     background-image: url(src/assets/images/section-seperator.png);
     background-repeat: repeat-x;
 
-    &:nth-of-type(odd) {
+    &:nth-of-type(even) {
         transform: rotate(180deg);
     }
 }

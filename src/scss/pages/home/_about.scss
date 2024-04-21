@@ -37,5 +37,38 @@
 
     &__button {
         @include button.default();
+        width: fit-content;
     }
+}
+
+@media screen and (max-width: 1024px) {
+    .about {
+
+        &__inner {
+            gap: 6rem;
+        }
+
+        &__content {
+            max-width: 400px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about {
+
+        &__inner {
+            flex-direction: column;
+            gap: 3rem;
+        }
+
+        &__content {
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+    }
+    
 }
