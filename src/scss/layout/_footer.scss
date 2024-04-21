@@ -1,0 +1,58 @@
+@use './layout';
+
+.site-footer {
+    @include layout.default();
+    margin: var(--section-gap-inner) 0;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__info {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 400px;
+    }
+
+    &__title {
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__link {
+        font-size: 1.25rem;
+        color: var(--color-dark-400);
+    }
+    
+}
+
+.social {
+
+    &__list {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.copyright {
+    opacity: 0.7;
+}

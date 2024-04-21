@@ -1,0 +1,65 @@
+@use '../../layout/layout';
+@use '../../components/buttons' as button;
+
+.services {
+    @include layout.default();
+    margin-bottom: var(--section-gap-inner);
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__button {
+        @include button.default();
+        width: fit-content;
+    }
+}
+
+.service {
+    max-width: 555px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    div {
+        position: relative;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 400;
+    }
+
+    &__background {
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__text {
+        margin: 0 3rem;
+    }
+}

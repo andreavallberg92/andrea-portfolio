@@ -2,24 +2,33 @@
 
 %input {
     padding: 0.5rem 1rem;
-    border: 2px solid var(--color-secondary-400);
+    border: none;
     border-radius: var(--border-radius);
-    background-color: var(--color-primary-100);
-    font-family: var(--font-sans);
-    margin-bottom: var(--gap-large);
-    font-size: var(--font-size-1);
+    background-color: var(--color-accent-500);
+    margin-bottom: 2rem;
+    font-size: var(--font-size-2);
     max-width: 100%;
     width: 100%;
+    box-shadow: 4px 4px 10px 0px rgba(248, 237, 235, 0.92), -1px -1px 10px 0px rgba(23, 14, 8, 0.22), 2px 4px 7px 0px inset rgba(248, 237, 235, 0.92), -2px -2px 10px 0px inset rgba(23, 14, 8, 0.22);
+    -webkit-box-shadow: 4px 4px 10px 0px rgba(248, 237, 235, 0.92), -1px -1px 10px 0px rgba(23, 14, 8, 0.22), 2px 4px 7px 0px inset rgba(248, 237, 235, 0.92), -2px -2px 10px 0px inset rgba(23, 14, 8, 0.22);
+    -moz-box-shadow: 4px 4px 10px 0px rgba(248, 237, 235, 0.92), -1px -1px 10px 0px rgba(23, 14, 8, 0.22), 2px 4px 7px 0px inset rgba(248, 237, 235, 0.92), -2px -2px 10px 0px inset rgba(23, 14, 8, 0.22);
+    
 }
 
+label {
+    font-size: var(--font-size-2);
+    font-family: var(--font-serif);
+    margin-bottom: 0.5rem;
+    display: block;
+}
 
-
-input:not([type="submit"], [type="sheckbox"], [type="radio"]) {
+input:not([type="submit"], [type="checkbox"], [type="radio"]) {
     @extend %input;
 }
 
 textarea {
     @extend %input;
+    margin-bottom: 3rem;
 }
 
 input[type="submit"] {

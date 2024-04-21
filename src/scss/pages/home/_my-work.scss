@@ -1,0 +1,58 @@
+@use '../../layout/layout';
+@use '../../components/buttons' as button;
+
+.work {
+    @include layout.default();
+    background-color: var(--color-light-500);
+    padding: var(--section-gap-inner) 0 var(--section-gap) 0;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        margin: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+.my-work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__image {
+        max-width: 438px;
+        width: 100%;
+        position: relative;
+    }
+
+    &__button{
+        @include button.default();
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__content {
+        max-width: 589px;
+    }
+
+    &__title {
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        margin: 0;
+    }
+}

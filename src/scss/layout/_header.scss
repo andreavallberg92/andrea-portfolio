@@ -4,6 +4,7 @@
     @include layout.default(full);
     position: fixed;
     width: 100%;
+    z-index: 999;
     
     &__inner {
         display: flex;

@@ -42,9 +42,10 @@
                 </a>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="" class="menu__link">Work</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">About</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                        <li class="menu__item"><a href="#services" class="menu__link">Services</a></li>
+                        <li class="menu__item"><a href="#work" class="menu__link">Work</a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -56,20 +57,23 @@
                 <div class="hero__content">
                     <h1 class="hero__title">Hi! I'm Andréa a Web developer & Web designer from Sweden </h1>
                     <p class="hero__text">Are you ready to take your online presence to the next level? I help you create a beautiful, effective, and user-friendly website that reflects your brand and reaches your goals.</p>
-                    <button class="hero__button">Contact me</button>
+                    <a href="#contact">
+                        <button class="hero__button">Contact me</button>
+                    </a>
                 </div>
                 <figure class="hero__image">
                     <img src="src/assets/images/hero-image.png" alt="images of Andréa Vallberg">
                 </figure>
             </div>
         </section>
+
         <div class="seperator"></div>
 
         <!-- About -->
-        <section class="about">
+        <section id="about" class="about">
             <div class="about__inner">
                 <figure class="about__image">
-                    <img src="" alt="">
+                    <img src="/src/assets/images/about-images.png" alt="Animated girl at a computer">
                 </figure>
                 <div class="about__content">
                     <h2 class="about__title">About me</h2>
@@ -80,7 +84,7 @@
         </section>
 
         <!-- Services -->
-        <section class="services">
+        <section id="services" class="services">
             <div class="services__inner">
                 <header class="services__header">
                     <h2 class="services__title">Services</h2>
@@ -88,40 +92,52 @@
                 </header>
                 <div class="services__content">
                     <div class="service">
-                        <h5 class="service__title">Web Design:</h5>
-                        <figure class="service__background">
-                            <img src="" alt="">
-                        </figure>
-                        <p class="service__text">I create visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience.</p>
+                        <h4 class="service__title">Web Design:</h4>
+                        <div>
+                            <figure class="service__background">
+                                <img src="/src/assets/images/service-bg-1.png" alt="">
+                            </figure>
+                            <p class="service__text">I create visually appealing and user-friendly websites that reflect your brand identity and resonate with your target audience.</p>
+                        </div>
                     </div>
                     <div class="service">
-                        <h5 class="service__title">Web Development:</h5>
-                        <figure class="service__background">
-                            <img src="" alt="">
-                        </figure>
-                        <p class="service__text">I build websites that are not only beautiful but also functional and secure. I have experience with both front-end and back-end development, ensuring your website performs flawlessly.</p>
+                        <h4 class="service__title">Web Development:</h4>
+                        <div>
+                            <figure class="service__background">
+                                <img src="/src/assets/images/service-bg-2.png" alt="">
+                            </figure>
+                            <p class="service__text">I build websites that are not only beautiful but also functional and secure. I have experience with both front-end and back-end development, ensuring your website performs flawlessly.</p>
+                        </div>
                     </div>
                     <div class="service">
-                        <h5 class="service__title">Content Management Systems (CMS):</h5>
-                        <figure class="service__background">
-                            <img src="" alt="">
-                        </figure>
-                        <p class="service__text">I can set up and configure a user-friendly CMS like WordPress, allowing you to easily update your website content without needing any coding knowledge.</p>
+                        <h4 class="service__title">Content Management Systems (CMS):</h4>
+                        <div>
+                            <figure class="service__background">
+                                <img src="/src/assets/images/service-bg-3.png" alt="">
+                            </figure>
+                            <p class="service__text">I can set up and configure a user-friendly CMS like WordPress, allowing you to easily update your website content without needing any coding knowledge.</p>
+                        </div>
                     </div>
                     <div class="service">
-                        <h5 class="service__title">Website Maintenance & Support:</h5>
-                        <figure class="service__background">
-                            <img src="" alt="">
-                        </figure>
-                        <p class="service__text">I offer ongoing maintenance and support plans to ensure your website stays up-to-date, secure, and functioning optimally.</p>
+                        <h4 class="service__title">Website Maintenance & Support:</h4>
+                        <div>
+                            <figure class="service__background">
+                                <img src="/src/assets/images/service-bg-4.png" alt="">
+                            </figure>
+                            <p class="service__text">I offer ongoing maintenance and support plans to ensure your website stays up-to-date, secure, and functioning optimally.</p>
+                        </div>
                     </div>
                 </div>
-                <button class="services__button">Schedule a Free Consultation</button>
+                <a href="#contact">
+                    <button class="services__button">Schedule a Free Consultation</button>
+                </a>
             </div>
         </section>
 
+        <div class="seperator"></div>
+
         <!-- My Work -->
-        <section class="work">
+        <section id="work" class="work">
             <div class="work__inner">
                 <header class="work__header">
                     <h2 class="work__title">My Work</h2>
@@ -130,21 +146,70 @@
                 <div class="work__content">
                     <div class="my-work">
                         <figure class="my-work__image">
-                            <img src="" alt="">
+                            <img src="/src/assets/images/image-slide-1.png" alt="">
                             <button class="my-work__button">Next</button>
                         </figure>
                         <div class="my-work__content">
-                            <h5 class="my-work__title">Title</h5>
-                            <p class="my-work__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum mollitia quidem sit suscipit assumenda, eius optio quisquam animi consectetur repellendus.</p>
+                            <h3 class="my-work__title">The Everbloom Conservatory Website</h3>
+                            <p class="my-work__text">To showcase the wonders of a mythical plant called the Everbloom, I designed and developed a captivating website. Visitors explored interactive 3D environments featuring the Everbloom's lifecycle, from its luminescent bud to its mesmerizing flower. The website, built with a custom CMS, allowed for easy updates on new Everbloom discoveries!</p>
                         </div>
-
+                    </div>
+                    <div class="my-work">
+                        <figure class="my-work__image">
+                            <img src="/src/assets/images/image-slide-2.png" alt="">
+                            <button class="my-work__button">Next</button>
+                        </figure>
+                        <div class="my-work__content">
+                            <h3 class="my-work__title">Crafting Websites That Convert: Grow Your Business Online</h3>
+                            <p class="my-work__text">Tired of a website that just looks pretty? I create websites that not only impress but also drive results.  Let's work together to attract more customers and boost your online presence.</p>
+                        </div>
+                    </div>
+                    <div class="my-work">
+                        <figure class="my-work__image">
+                            <img src="/src/assets/images/image-slide-3.png" alt="">
+                            <button class="my-work__button">Next</button>
+                        </figure>
+                        <div class="my-work__content">
+                            <h3 class="my-work__title">Your Vision, My Expertise: Web Design & Development Made Easy</h3>
+                            <p class="my-work__text">Don't let technical jargon hold you back. I translate your vision into a stunning and functional website. Focus on your business, while I handle the web design and development details.</p>
+                        </div>
+                    </div>
+                    <div class="my-work">
+                        <figure class="my-work__image">
+                            <img src="/src/assets/images/image-slide-4.png" alt="">
+                            <button class="my-work__button">Next</button>
+                        </figure>
+                        <div class="my-work__content">
+                            <h3 class="my-work__title">Beyond Pixels: Creating User-Centric Websites People Love</h3>
+                            <p class="my-work__text">A website is more than just a collection of pages. I design websites with users in mind, ensuring a smooth and enjoyable experience that keeps them coming back for more.</p>
+                        </div>
+                    </div>
+                    <div class="my-work">
+                        <figure class="my-work__image">
+                            <img src="/src/assets/images/image-slide-5.png" alt="">
+                            <button class="my-work__button">Next</button>
+                        </figure>
+                        <div class="my-work__content">
+                            <h3 class="my-work__title">From Concept to Launch: Your One-Stop Shop for Web Solutions</h3>
+                            <p class="my-work__text">Need help with a website redesign? Looking to build a new website from scratch? I offer a comprehensive range of web design and development services to bring your ideas to life.</p>
+                        </div>
+                    </div>
+                    <div class="my-work">
+                        <figure class="my-work__image">
+                            <img src="/src/assets/images/image-slide-6.png" alt="">
+                            <button class="my-work__button">Next</button>
+                        </figure>
+                        <div class="my-work__content">
+                            <h3 class="my-work__title">Let's Talk Web Design: Schedule Your Free Consultation Today!</h3>
+                            <p class="my-work__text">Ready to take your online presence to the next level? I'd love to discuss your website needs and explore how I can help.  Schedule your free consultation today and let's get started!</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Form -->
-        <section class="contact-form">
+        <section id="contact" class="contact-form">
             <div class="contact-form__inner">
                 <div class="contact-form__content">
                     <h2 class="contact-form__title">Contact me</h2>
@@ -154,43 +219,47 @@
                         <label for="email">Email:</label>
                         <input type="email" name="email">
                         <label for="request">Request:</label>
-                        <textarea name="request" cols="30" rows="10"></textarea>
+                        <textarea name="request" cols="30" rows="5"></textarea>
                         <input type="submit" value="Submit">
 
                     </form>
                 </div>
                 <figure class="contact-form__image">
-                    <img src="" alt="">
+                    <img src="/src/assets/images/contact-image.png" alt="image of a girl holding an envelope">
                 </figure>
 
             </div>
         </section>
 
+        <div class="seperator"></div>
+
         <!-- Footer -->
         <footer class="site-footer">
             <div class="site-footer__inner">
-                <div class="site-footer__content">
-                    <h3 class="site-footer__title">Let's keep in touch!</h3>
-                    <p class="site-footer__text">You can find me on my social media, hope to see you there!</p>
-                    <div class="social">
-                        <ul class="social__list">
-                            <li class="social__item"><a href="" class="social__link"></a></li>
-                            <li class="social__item"><a href="" class="social__link"></a></li>
-                            <li class="social__item"><a href="" class="social__link"></a></li>
-                        </ul>
+                <div class="site-footer__info">
+                    <div class="site-footer__content">
+                        <h3 class="site-footer__title">Let's keep in touch!</h3>
+                        <p class="site-footer__text">You can find me on my social media, hope to see you there!</p>
+                        <div class="social">
+                            <ul class="social__list">
+                                <li class="social__item"><a href="" class="social__link"><img src="/src/assets/icons/pinterest.svg" alt=""></a></li>
+                                <li class="social__item"><a href="" class="social__link"><img src="/src/assets/icons/facebook.svg" alt=""></a></li>
+                                <li class="social__item"><a href="" class="social__link"><img src="/src/assets/icons/instagram.svg" alt=""></a></li>
+                            </ul>
+                        </div>
                     </div>
+                    <nav class="site-footer__links">
+                        <h3 class="site-footer__title">Links</h3>
+                        <ul class="site-footer__list">
+                            <li class="site-footer__item"><a href="#about" class="site-footer__link">About me</a></li>
+                            <li class="site-footer__item"><a href="#services" class="site-footer__link">Services</a></li>
+                            <li class="site-footer__item"><a href="#work" class="site-footer__link">My Work</a></li>
+                            <li class="site-footer__item"><a href="#contact" class="site-footer__link">Contact me</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="site-footer__links">
-                    <h3 class="site-footer__title">Links</h3>
-                    <ul class="site-footer__list">
-                        <li class="site-footer__item"><a href="" class="site-footer__link">About me</a></li>
-                        <li class="site-footer__item"><a href="" class="site-footer__link">Services</a></li>
-                        <li class="site-footer__item"><a href="" class="site-footer__link">My Work</a></li>
-                        <li class="site-footer__item"><a href="" class="site-footer__link">Contact me</a></li>
-                    </ul>
-                </nav>
+                <div class="copyright">Copyright © 2024 Andréa Design</div>
             </div>
-            <div class="copyright">Copyright © 2024 Andréa Design</div>
         </footer>
     </div>
 </body>
