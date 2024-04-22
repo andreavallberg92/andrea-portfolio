@@ -178,7 +178,7 @@ input[type=submit]:hover {
   background-image: url(src/assets/images/section-seperator.png);
   background-repeat: repeat-x;
 }
-.seperator:nth-of-type(even) {
+.seperator--rotate {
   transform: rotate(180deg);
 }
 
